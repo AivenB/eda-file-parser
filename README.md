@@ -222,6 +222,26 @@ options:
   --group GROUP         Filter paths by path group name
 ```
 
+## How to Build
+Assuming prequisites are met:
+
+1. Clone GitHub repository
+```bash
+git@github.com:AivenB/eda-file-parser.git
+```
+
+2. Setup Virtual Environment
+- Run `uv sync` to setup virtual environment with correct
+dependencies seen in `pyproject.toml` and `uv.lock`
+```bash
+uv sync
+```
+
+3. Run test to verify setup
+```bash
+uv run pytest
+```
+
 ## Additional Resources
 
 - [uv Documentation](https://docs.astral.sh/uv/)
