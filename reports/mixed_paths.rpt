@@ -1,0 +1,74 @@
+Startpoint: reg_min_violated (rising edge-triggered flip-flop clocked by clk)
+Endpoint: reg_min_end (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk_group
+Path Type: min
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.000     0.000    clock clk (rise edge)
+             0.800    data arrival time
+
+   0.000     0.000    clock clk (rise edge)
+             1.000    data required time
+-------------------------------------------------------------
+             1.000    data required time
+            -0.800    data arrival time
+-------------------------------------------------------------
+            -0.200    slack (VIOLATED)
+
+
+Startpoint: reg_max_violated (rising edge-triggered flip-flop clocked by clk)
+Endpoint: reg_max_end (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk_group
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+    0.000    0.000    clock clk (rise edge)
+             12.000   data arrival 
+
+    0.000    0.000    clock clk (rise edge)
+             10.000   data required time
+-------------------------------------------------------------
+             10.000   data required time
+            -12.000   data arrival time
+-------------------------------------------------------------
+             -2.000   slack (VIOLATED)
+
+
+Startpoint: reg_min_met (rising edge-triggered flip-flop clocked by clk)
+Endpoint: reg_min_met_end (rising edge-triggered flip-flop clocked by clk)
+Path Group: other_group
+Path Type: min
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.000     0.000    clock clk (rise edge)
+             2.000    data arrival time
+
+   0.000     0.000    clock clk (rise edge)
+             1.000    data required time
+-------------------------------------------------------------
+             1.000    data required time
+            -2.000    data arrival time
+-------------------------------------------------------------
+             1.000    slack (MET)
+
+
+Startpoint: reg_max_met (rising edge-triggered flip-flop clocked by clk)
+Endpoint: reg_max_met_end (rising edge-triggered flip-flop clocked by clk)
+Path Group: other_group
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.000     0.000    clock clk (rise edge)
+             8.000    data arrival time
+
+   0.000     0.000    clock clk (rise edge)
+             10.000   data required time
+-------------------------------------------------------------
+             10.000   data required time
+            -8.000    data arrival time
+-------------------------------------------------------------
+             2.000    slack (MET)

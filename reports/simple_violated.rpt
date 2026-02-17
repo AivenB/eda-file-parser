@@ -1,0 +1,17 @@
+Startpoint: reg_x (rising edge-triggered flip-flop clocked by clk)
+Endpoint: reg_y (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.000     0.000    clock clk (rise edge)
+             15.000   data arrival time
+
+   0.000     0.000    clock clk (rise edge)
+             10.000   data required time
+-------------------------------------------------------------
+             10.000   data required time
+            -15.000   data arrival time
+-------------------------------------------------------------
+            -5.0000   slack (VIOLATED)
