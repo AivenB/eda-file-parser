@@ -227,7 +227,7 @@ Assuming prequisites are met:
 
 1. Clone GitHub repository
 ```bash
-git@github.com:AivenB/eda-file-parser.git
+git clone git@github.com:AivenB/eda-file-parser.git
 ```
 
 2. Setup Virtual Environment
@@ -252,3 +252,4 @@ uv run pytest
 - [Python Docstring Guide](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)
 - [Python Dataclasses Documentation](https://docs.python.org/3/library/dataclasses.html)
 - [OpenROAD GitHub Repository](https://github.com/The-OpenROAD-Project/OpenROAD)
+
