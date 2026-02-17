@@ -1,6 +1,6 @@
 # EDA File Parser
 
-My attempt to build a Python tool for parsing and analyzing EDA (Electronic Design Automation) timing reports. This parser extracts timing path information from static timing analysis (STA) reports and provides statistical analysis, filtering, and reporting capabilities.
+A Python-based tool for parsing and analyzing static timing analysis (STA) reports used in Electronic Design Automation (EDA) workflows. The project converts timing report output into structured data models that enable filtering, summarization, and programmatic analysis.
 
 ## Features
 
@@ -11,8 +11,7 @@ My attempt to build a Python tool for parsing and analyzing EDA (Electronic Desi
 - **Test Suite**: Comprehensive test suite using pytest
 - **Type-Safe**: Fully typed with Python type hints and dataclasses
 
-## Prerequisites
-
+## Prerequisites/Requirements
 Before dowloading repo, ensure the following is met:
 
 - **Python 3.14+** was used and (recommonded)
@@ -165,13 +164,13 @@ eda-file-parser/
 └── .python-version          # Python version specification
 ```
 
-## Development
+## Roadmap
 
 ### Planned Improvements
 - Add containerized test environments (Docker / Podman)
-- Expand edge-case coverage
+- Expand test coverage for edge cases
 - Improve parser validation for malformed or unexpected formats
-- Strengthen graceful error handling
+- Improve structured error handling and reporting
 
 ### Developer Notes
 - AI-assisted tools were used to help generate and refine portions of the unit test suite.
@@ -238,6 +237,15 @@ uv sync
 
 3. Run test to verify setup
 ```bash
+uv run pytest
+```
+
+## Quick Start Build
+
+```bash
+git clone https://github.com/AivenB/eda-file-parser.git
+cd eda-file-parser
+uv sync
 uv run pytest
 ```
 
