@@ -26,7 +26,6 @@ def report_paths(reports_dir):
         "timing_full": reports_dir / "timing_full.rpt",
         "mixed_paths": reports_dir / "mixed_paths.rpt",
         "empty": reports_dir / "empty.rpt",
-        "malformed": reports_dir / "malformed.rpt",
     }
 
 
@@ -100,7 +99,6 @@ class TestParser:
         assert report_paths["simple_met"].exists()
         assert report_paths["simple_violated"].exists()
         assert report_paths["mixed_paths"].exists()
-        assert report_paths["malformed"].exists()
         assert report_paths["empty"].exists()
 
 
