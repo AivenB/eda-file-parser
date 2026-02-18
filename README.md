@@ -171,6 +171,7 @@ eda-file-parser/
 - Expand test coverage for edge cases
 - Improve parser validation for malformed or unexpected formats
 - Improve structured error handling and reporting
+- Add data visualizations for analysis results (e.g., slack distribution histograms, worst-path summaries, and group-level metrics)
 
 ### Developer Notes
 - AI-assisted tools were used to help generate and refine portions of the unit test suite.
